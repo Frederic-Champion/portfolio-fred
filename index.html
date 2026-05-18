@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <title>Frédéric Champion — Développeur Fullstack</title>
+</head>
+<body class="bg-[#0e121b] text-[#f1f5f9]">
+
+    <header class="flex justify-between items-center py-2 px-6 my-8 fixed w-full top-0">
+        <div class="font-bold text-white text-xl"><span class="text-[#3b82f6]"><</span> Frédéric Champion <span class="text-[#3b82f6]">/></span></div>
+        <nav class="flex gap-8 py-6 px-8 rounded-xl border border-[#3b82f6] bg-[#181f30]" id="navbar">
+            <a class="nav-link" href="#accueil">Accueil</a>
+            <a class="nav-link" href="#a-propos">À propos</a>
+            <a class="nav-link" href="#competences">Compétences</a>
+            <a class="nav-link" href="#projets">Projets</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="min-h-screen flex flex-col items-center justify-center gap-4" id="hero">
+            <h1 class="text-6xl font-bold">Développeur Fullstack</h1>
+            <h2 class="text-xl font-semibold">Je conçois des outils web qui simplifient le travail des équipes.</h2>
+            <p class="text-lg text-slate-300">Ancien opticien en reconversion tech. Je comprends les vrais problèmes métier avant d'écrire la première ligne de code.</p>
+            <div class="flex gap-4">
+                <button class="btn-primary" type="button" id="CTA-projets">Voir mes projets</button>
+                <button class="btn-secondary" type="button" id="CTA-contact">Me contacter</button>
+            </div>
+        </section>
+        <section class="flex max-w-5xl mb-40 mx-auto gap-20 items-center" id="a-propos">
+            <div class="w-96 h-96 rounded-full overflow-hidden shrink-0 border-4 border-[#3b82f6]">
+                <img class="w-full h-full object-cover transform duration-300 hover:scale-105" src="./assets/photodemoi.jpg" alt="Photo de Frédéric Champion">
+            </div>
+            <div class="my-10 mx-auto py-14 px-6 border border-[#3b82f6]/50 bg-[#181f30] rounded-xl">
+                <h2 class="text-4xl mb-4">À PROPOS</h2>
+                <p class="leading-relaxed mb-4">Pendant 14 ans, j'ai résolu des problèmes concrets — comprendre les besoins d'un patient,
+                    trouver la solution technique adaptée, puis choisir ensemble la monture qui lui correspond vraiment.</p>
+                <p class="leading-relaxed mb-4">C'est exactement cette approche que j'applique aujourd'hui en développement : écouter le besoin réel, concevoir l'outil qui y répond,
+                    et soigner chaque détail pour que le résultat soit aussi utile qu'agréable à utiliser.</p>
+                <p class="leading-relaxed mb-4">En reconversion fullstack depuis 2025, je construis des sites et des applications — du simple site 
+                    vitrine pour une boutique locale, jusqu'aux outils métier qui simplifient le quotidien des équipes.</p>
+            </div>
+        </section>
+        <section class="py-20 px-6 text-center" id="competences">
+            <h2 class="text-4xl mb-8">COMPÉTENCES</h2>
+            <div class="h-px w-32 bg-[#3b82f6] mx-auto mb-8"></div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mt-10 mx-auto">
+                <div class="comp"><i class="devicon-html5-plain colored text-4xl"></i><p>HTML</p></div>
+                <div class="comp"><i class="devicon-css3-plain colored text-4xl"></i><p>CSS</p></div>
+                <div class="comp"><i class="devicon-tailwindcss-original colored text-4xl"></i><p>Tailwind CSS<p></div>
+                <div class="comp"><i class="devicon-javascript-plain colored text-4xl"></i><p>JavaScript</p></div>
+                <div class="comp"><i class="devicon-git-plain colored text-4xl"></i><p>Git/GitHub</p></div>
+                <div class="comp"><i class="devicon-react-original colored text-4xl"></i><p>React (en cours)</p></div>
+                <div class="comp"><i class="devicon-nextjs-plain colored text-4xl"></i><p>Next.js (en cours)</p></div>
+                <div class="comp"><i class="devicon-fastapi-plain colored text-4xl"></i><p>FastAPI (en cours)</p></div>
+            </div>
+        </section>
+        <section class="py-20 px-6 text-center">
+            <h2 class="text-4xl mb-8">PROJETS</h2>
+            <div class="h-px w-32 bg-[#3b82f6] mx-auto mb-8"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 max-w-5xl mt-10 mx-auto gap-x-24 gap-y-12" id="projets">
+                <div class="projet">
+                    <div class="w-full h-48 bg-blue-900 transition-transform duration-300 hover:scale-105"></div>
+                    <div class="p-4">
+                        <p class="font-bold">Gestionnaire de montures</p>
+                        <p class="text-slate-300 text-sm">JS vanilla, DOM, ajout/suppression dynamique</p>
+                        <a href="" target="_blank" class="text-[#3b82f6] text-sm hover:underline">→ Voir sur GitHub</a>
+                    </div>
+                </div>
+                <div class="projet">
+                    <div class="w-full h-48 bg-red-900 transition-transform duration-300 hover:scale-105"></div>
+                    <div class="p-4">
+                        <p class="font-bold">World Explorer</p>
+                        <p class="text-slate-300 text-sm">Fetch API, recherche temps réel, filtre par région</p>
+                        <a href="" target="_blank" class="text-[#3b82f6] text-sm hover:underline">→ Voir sur GitHub</a>
+                    </div>
+                </div>
+                <div class="projet">
+                    <div class="w-full h-48 bg-green-900 transition-transform duration-300 hover:scale-105"></div>
+                    <div class="p-4">
+                        <p class="font-bold">Vitrine Tailwind</p>
+                        <p class="text-slate-300 text-sm">Page responsive, architecture src/dist, @apply</p>
+                        <a href="" target="_blank" class="text-[#3b82f6] text-sm hover:underline">→ Voir sur GitHub</a>
+                    </div>
+                </div>
+                <div class="projet">
+                    <div class="w-full h-48 bg-yellow-900 transition-transform duration-300 hover:scale-105"></div>
+                    <div class="p-4">
+                        <p class="font-bold">D'autres à venir (notament enquête des besoins clients)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-20" id="contact">
+            <h2 class="text-4xl mb-8 text-center">CONTACT</h2>
+            <div class="h-px w-32 bg-[#3b82f6] mx-auto mb-8"></div>
+            <div class="max-w-5xl mt-10 flex mx-auto">
+                <div class="px-12 flex flex-col flex-1 text-center">
+                    <p class="leading-relaxed mb-4">Vous avez un projet en tête ou une question ?</p>
+                    <p class="leading-relaxed mb-4">N'hésitez pas à me contacter en utilisant le formulaire ci-contre.</p>
+                    <p class="leading-relaxed mb-4">Je vous répondrai dans les plus brefs délais.</p>
+                    <a class="mt-auto" href="mailto:fredichampix@gmail.com">fredichampix@gmail.com</a>
+                    <div class="my-2">
+                        <a class="mx-2" href="" target="_blank"><i class="devicon-github-original text-4xl"></i></a>
+                        <a class="mx-2" href="" target="_blank"><i class="devicon-linkedin-plain colored text-4xl"></i></a>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <form>
+                        <div>
+                            <label for="nom">Nom</label>
+                            <input class="bg-[#1e293b] w-full rounded-lg p-3 mt-1 mb-4 text-white" id="nom" type="text" placeholder="Votre nom">
+                        </div>
+                        <div>
+                            <label for="mail">Email</label>
+                            <input class="bg-[#1e293b] w-full rounded-lg p-3 mt-1 mb-4 text-white" id="mail" type="email" placeholder="VotreEmail@mail.dev">
+                        </div>
+                        <div>
+                            <label for="texte">Message</label>
+                            <textarea class="bg-[#1e293b] w-full rounded-lg p-3 mt-1 mb-4 text-white" id="texte" rows="5" placeholder="Ecrit ton texte"></textarea>
+                        </div>
+                        <button class="btn-primary w-full" type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-2 mt-20">
+        <p>© 2025 Frédéric Champion — Développeur Fullstack</p>
+    </footer>
+
+</body>
+</html>

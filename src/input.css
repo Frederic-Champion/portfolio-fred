@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+}
+@layer components {
+    .nav-link {
+        @apply text-slate-300 font-medium transition duration-300 hover:text-white;
+    }
+    .btn-primary {
+        @apply border-2 border-[#3b82f6] bg-[#3b82f6] text-white rounded-full py-2 px-4 transition duration-300 hover:bg-blue-600;
+    }
+    .btn-secondary {
+        @apply border-2 border-white bg-transparent text-white rounded-full py-2 px-4 transition duration-300 hover:bg-white/20;
+    }
+    .comp {
+        @apply bg-[#1e293b] rounded-full p-4;
+    }
+    .projet {
+        @apply bg-[#1e293b] rounded-xl overflow-hidden;
+    }
+    .hidden-section {
+        @apply opacity-0 translate-y-40 transition-all duration-700;
+    }
+    .visible-section {
+        @apply opacity-100 translate-y-0 transition-all duration-700;
+    }
+}
