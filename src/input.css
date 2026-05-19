@@ -27,4 +27,10 @@
     .visible-section {
         @apply opacity-100 translate-y-0 transition-all duration-700;
     }
+    .navbarCache {
+        @apply -translate-y-36;
+    }
+    .navbarScrolled {
+        @apply bg-black/25 backdrop-blur-xs;
+    }
 }

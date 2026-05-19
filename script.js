@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section:not(#hero)");
 
 for (let section of sections) {
     section.classList.add("hidden-section");
@@ -19,3 +19,24 @@ const observer = new IntersectionObserver(callback, option);
 for (let section of sections) {
     observer.observe(section);
 }
+
+const navbar = document.querySelector("#navbar");
+const header = document.querySelector("header");
+
+let scrollInitial = 0;
+window.addEventListener("scroll", () => {
+    let scrollActuel = window.scrollY;
+    if (window.scrollY >= scrollInitial) {
+        header.classList.add("navbarCache");
+    }else {
+        header.classList.remove("navbarCache");
+    }
+    scrollInitial = window.scrollY
+    if (window.scrollY > 50) {
+        navbar.classList.add('navbarScrolled');
+        navbar.classList.remove('bg-[#181f30]');
+    }else {
+        navbar.classList.remove('navbarScrolled');
+        navbar.classList.add('bg-[#181f30]');
+    }
+});
