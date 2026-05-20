@@ -40,3 +40,10 @@ window.addEventListener("scroll", () => {
         navbar.classList.add('bg-[#181f30]');
     }
 });
+
+const burger = document.querySelector("#burger");
+
+burger.addEventListener("click", () => {
+navbar.classList.toggle("menuOuvert");
+navbar.classList.toggle("hidden")
+})

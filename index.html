@@ -11,11 +11,16 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <title>Frédéric Champion — Développeur Fullstack</title>
 </head>
-<body class="bg-[#0e121b] text-[#f1f5f9] overflow-x-hidden">
+<body class="bg-[#0e121b] text-[#f1f5f9]">
 
     <header class="flex justify-between items-center py-2 px-6 my-8 fixed w-full top-0 transition-transform duration-500 z-50">
         <div class="font-bold text-white text-xl"><span class="text-[#3b82f6]"><</span> Frédéric Champion <span class="text-[#3b82f6]">/></span></div>
-        <nav class="flex gap-8 py-6 px-8 rounded-xl border border-[#3b82f6] bg-[#181f30]" id="navbar">
+        <button class="md:hidden flex flex-col gap-1.5 p-2 items-center cursor-pointer" id="burger">
+            <div class="w-5 h-0.5 rounded-full transition-all duration-300 bg-white"></div>
+            <div class="w-6 h-0.5 rounded-full transition-all duration-300 bg-[#3b82f6]"></div>
+            <div class="w-5 h-0.5 rounded-full transition-all duration-300 bg-white"></div>
+        </button>
+        <nav class="hidden md:flex gap-6 py-6 px-8 rounded-xl border border-[#3b82f6] bg-[#181f30]" id="navbar">
             <a class="nav-link" href="#accueil">Accueil</a>
             <a class="nav-link" href="#a-propos">À propos</a>
             <a class="nav-link" href="#competences">Compétences</a>
