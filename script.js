@@ -46,4 +46,18 @@ const burger = document.querySelector("#burger");
 burger.addEventListener("click", () => {
 navbar.classList.toggle("menuOuvert");
 navbar.classList.toggle("hidden")
-})
+});
+
+const navLien = document.querySelectorAll("nav a");
+for (let lien of navLien) {
+    lien.addEventListener('click', () => {
+        navbar.classList.remove("menuOuvert");
+        navbar.classList.add("hidden")
+    });
+}
+document.addEventListener("click", (event) => {
+    if (!navbar.contains(event.target) && !burger.contains(event.target)) {
+        navbar.classList.remove("menuOuvert");
+        navbar.classList.add("hidden")
+    }
+});
