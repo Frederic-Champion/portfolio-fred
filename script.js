@@ -61,3 +61,12 @@ document.addEventListener("click", (event) => {
         navbar.classList.add("hidden")
     }
 });
+
+/*  ==> Darkmode en Tailwind, à faire plus tard en React.
+const darkButton = document.querySelectorAll(".darkButton");
+for (let button of darkButton) {
+    button.addEventListener("click", () => {
+        document.querySelector("html").classList.toggle('dark');
+    })
+}
+    */
