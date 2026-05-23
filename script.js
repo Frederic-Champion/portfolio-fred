@@ -44,8 +44,9 @@ window.addEventListener("scroll", () => {
 const burger = document.querySelector("#burger");
 
 burger.addEventListener("click", () => {
-navbar.classList.toggle("menuOuvert");
-navbar.classList.toggle("hidden")
+    navbar.classList.toggle("menuOuvert");
+    navbar.classList.toggle("hidden");
+    burger.classList.toggle("burger-ouvert")
 });
 
 const navLien = document.querySelectorAll("nav a");
